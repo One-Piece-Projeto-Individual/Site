@@ -1,0 +1,82 @@
+body{
+    margin: auto;
+    padding: auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.agora{
+    font-weight: 800;
+}
+
+.navbar{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 23px;
+    margin-right: 100px;
+}
+
+.titulo{
+    display: flex;
+    color: white;
+    width: fit-content;
+    font-size: 40px;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+   
+}
+
+.bando{
+    height:10cm;
+    width: 15cm;
+    margin-left: 25%;
+    margin-top: 30px; 
+}
+
+.texto{
+color: white;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+margin-bottom: 100px;
+margin-left: 30%;
+margin-top: 40px; 
+font-family: 'One Piece';
+}
+
+
+
+
+.subtitulo{
+    margin-left: 30%;
+    font-size: 2cm;
+    color: white;
+
+}
+
+
+
