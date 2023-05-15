@@ -10,7 +10,13 @@ var contexto = {
 
          One Piece é conhecido por seu mundo rico e diversificado,<br> que inclui vários reinos, ilhas e criaturas fantásticas.<br> One Piece é um dos mangás mais
         vendidos de todos os tempos<br> e tem uma grande base de fãs em todo o mundo.<br> O anime é transmitido em muitos
-        países e continua<br> a ser uma das séries mais populares da atualidade.`,
+        países e continua<br> a ser uma das séries mais populares da atualidade.<br><br>
+
+        Atualmente, One Piece tem mais de 1000 episódios de anime e mais de<br>
+         100 volumes de mangá publicados. O mangá ainda está em andamento, e<br>
+          novos capítulos são lançados semanalmente na revista Weekly Shonen Jump,<br>
+           no Japão. O anime continua a ser produzido e transmitido, e novos<br>
+            episódios são lançados periodicamente.`,
 
         mylife: `One Piece entrou em minha minha quando tinha 8 anos anos de idade e chmaou a atenção`
   };

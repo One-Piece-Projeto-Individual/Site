@@ -9,7 +9,6 @@ body{
     width: 80%;
     margin: auto;
     display: flex;
-    font-family: "One Piece";
 }
 
 
@@ -70,22 +69,56 @@ font-family: 'One Piece';
 }
 
 
-
-
 .subtitulo{
     margin-left: 30%;
     font-size: 2cm;
     color: white;
-
 }
 
-.caixa1 {
-width: 50px;
-height: 100px;
-border-color: white;
+
+  .cadastro-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent;
+    width: 300px;
+    margin: auto;
+    margin-top: 150px;
+  }
+  
+  .cadastro-box h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  label {
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 280px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+.textoLogin{
+font-family: "One Piece";
 color: white;
-display: flex;
-border: 2px;
-border-radius: 2px;
+text-align: center;
 }
-
