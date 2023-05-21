@@ -1,0 +1,101 @@
+body{
+  background-color: black;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #fff;
+  font-family: "One Piece";
+}
+
+
+nav ul {
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.titulo {
+padding: 120px;
+font-size: 40px;
+  
+}
+
+nav{
+  padding: 100px;
+}
+
+.logo{
+  height: 50px;
+  width: 50px;
+ 
+}
+
+
+.cadastro-box {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: transparent;
+  width: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.cadastro-box h2 {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+
+label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 280px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.textoLogin{
+font-family: "One Piece";
+color: white;
+text-align: center;
+}
+
+

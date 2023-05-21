@@ -1,41 +1,55 @@
 body{
-    margin: auto;
-    padding: auto;
-    font-family: 'Courier New', Courier, monospace;
     background-color: black;
-}
-
-.container{
-    width: 80%;
     margin: auto;
+    width: auto;
+    height: auto;
+}
+
+header {
     display: flex;
-    font-family: "One Piece";
-}
-
-
-
-.header .container {
-    justify-content: space-between;
-}
-
-.header a {
-    text-decoration: none;
-    color: white;
-}
-
-.agora{
-    font-weight: 800;
-}
-
-.navbar{
-    width: 300px;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    color: white;
-    gap: 23px;
-    margin-right: 100px;
+    height: 80px;
+    color: #fff;
+    font-family: "One Piece";
+  }
+  
+  
+  nav ul {
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+
+  .titulo {
+ padding: 120px;
+ font-size: 40px;
+    
+  }
+
+  nav{
+    padding: 100px;
+  }
+
+  .logo{
+    height: 50px;
+    width: 50px;
+   
 }
+
 
 .titulo{
     display: flex;

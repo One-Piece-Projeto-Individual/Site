@@ -17,8 +17,14 @@ var contexto = {
           novos capítulos são lançados semanalmente na revista Weekly Shonen Jump,<br>
            no Japão. O anime continua a ser produzido e transmitido, e novos<br>
             episódios são lançados periodicamente.`,
-
-        mylife: `One Piece entrou em minha minha quando tinha 8 anos anos de idade e chmaou a atenção`
+ 
   };
   var contexto = contexto.texto;
+
+
+  
+
+  
+
+  
   

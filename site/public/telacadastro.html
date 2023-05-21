@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
+    <link rel="stylesheet" href="./riu css/telacadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <img class="logo" src="./img/goldroger.jpg" alt="">Ele riu
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicial</a></li>
+                <li>
+                    <a href="./personagens.html">Personagens</a>
+                </li>
+                <li>
+                    <a href="./cuirosidades.html">Curiosidades</a>
+                </li>
+                <li>
+                    <a href="telalogin.html">Login</a>
+                </li>
+                <li>
+                    <a href="telacadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cadastro-box">
+        <h2>Cadastro</h2>
+        <div class="textoLogin">
+            <div>Usuário</div><br>
+            <input id="nome_input"><br>
+            <div>Email:</div><br>
+            <input id="email_input"><br>
+            <div>Senha:</div><br>
+            <input type="password" id="senha_input"><br>
+            <div>Confirmar Senha:</div><br>
+            <input type="password" id="confirmacao_senha_input"><br>
+            <select name="personagem" id="personagem">
+                <option value="1">luffy</option>
+                <option value="2">zoro</option>
+                <option value="3">nami</option>
+                <option value="4">usopp</option>
+                <option value="5">sanji</option>
+                <option value="6">chopper</option>
+                <option value="7">robin</option>
+                <option value="8">franky</option>
+                <option value="9">brook</option>
+                <option value="10">jinbe</option>
+            </select>
+            <button onclick="cadastrar()">Cadastrar</button><br>
+            <div id="div_msg"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+        //aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var personagemVar = personagem.value;
+
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || personagemVar == "") {
+
+            alert('Preencha todos os campos');
+
+            // finalizarAguardar();
+            return false;
+        } else if (emailVar.indexOf("@") == -1) {
+            alert("Seu Email não é válido")
+            return
+        }else if(nomeVar.length < 3){                        
+                alert("seu nome deve ter pelo menos 3 caracteres")
+            return
+        } else if (senhaVar.length < 8) {
+            alert("sua senha deve ter ao menos 8 caracteres!")
+            return 
+        }else if(senhaVar != confirmacaoSenhaVar){
+            alert("confirmação de senha incorreta")
+            return
+        }else {
+            //setInterval(sumirMensagem, 5000)
+
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+                personagemServer: personagemVar
+
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                // cardErro.style.display = "block";
+
+                div_msg.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+                setTimeout(() => {
+                    window.location = "./telalogin.html";
+                }, "2000")
+                
+                 //limparFormulario();
+                // finalizarAguardar();
+            } else {
+                alert("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            //  finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    // function sumirMensagem() {
+        // cardErro.style.display = "none"
+    // }
+
+</script>
