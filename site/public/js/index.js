@@ -49,7 +49,7 @@ var frutas = {
        a Mera Mera no Mi, que concede o poder do fogo a seu usuário, e a Goro Goro no Mi, que concede<br>
         o poder da eletricidade.<br><br>
 
-   Zoan Míticas permitem ao usuário se transformar em uma criatura mítica ou lendária<br>.
+   Zoan Míticas permitem ao usuário se transformar em uma criatura mítica ou lendária.<br>
 
    Existem várias Zoan Míticas apresentadas na série, cada uma com suas características<br>
     únicas. Alguns exemplos notáveis incluem:<br>
@@ -64,7 +64,7 @@ var frutas = {
 
    Inu Inu no Mi, Modelo: Kyubi no Kitsune (Fruta Cão-Cão, Modelo: Raposa de Nove<br>
     Caudas): Permite a transformação em uma raposa com nove caudas, uma criatura mitológica<br>
-     com poderes sobrenaturais. É possuída por Kozuki Momonosuke.<br><br><br>
+     com poderes sobrenaturais. É possuída por Kozuki Momonosuke.<br><br>
      `,
 }
   var frutas = frutas.texto;

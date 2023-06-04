@@ -1,0 +1,124 @@
+#palavras_cruzadas{
+    border: 1px solid blue;
+    text-align: center;
+    border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+    color: white;
+}
+
+.formulario{
+        border: none;
+        text-align: center;
+        border-collapse: collapse;
+		width: 50px;
+        height:50px;
+        text-transform: uppercase;
+}
+
+td {
+    border: 1px solid black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+#fundo_jogo {
+    float: left;
+   margin: 10px;
+}
+
+.escrita {
+    text-align: left;
+    border: 1px solid white;
+    padding-left: 10px;
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: auto;
+}
+
+.botao{
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+body{
+    background-color: black;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #fff;
+    font-family: "One Piece";
+    margin-bottom: 100px;
+  }
+  
+  
+  nav ul {
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+
+  .titulo {
+ padding: 120px;
+ font-size: 40px;
+    
+  }
+
+  nav{
+    padding: 100px;
+  }
+
+  .logo{
+    height: 50px;
+    width: 50px;
+   
+}
+
+
+.titulo{
+    display: flex;
+    color: white;
+    width: fit-content;
+    font-size: 40px;
+    align-items: center;
+}
+
+
+
+
+
