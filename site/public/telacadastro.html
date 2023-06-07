@@ -61,33 +61,6 @@
 
 <script>
 
-// function contarVotoPersonagem() {
-//         fetch("/usuarios/votos", {
-//             method: "GET"
-//         }).then(function (resposta) {
-//             if (resposta.ok) {
-//                 resposta.json().then((json) => {
-//                     console.log(json)
-//                     if (json[0].idPersonagem == 1) {
-//                         img_fav.innerHTML = `luffy`
-//                     } else if (json[0].idPersonagem == 2) {
-//                         img_fav.innerHTML = `<img src="../assets/imgs/gif-cadastro-sasuke.gif">`
-//                     } else if (json[0].idPersonagem == 3) {
-//                         img_fav.innerHTML = ` <img src="../assets/imgs/gif-cadastro-kakashi.gif">`
-//                     } else if (json[0].idPersonagem == 4) {
-//                         img_fav.innerHTML = ` <img src="../assets/imgs/gif-cadastro-itachi.gif">`
-//                     } else if (json[0].idPersonagem == 5) {
-//                         img_fav.innerHTML = ` <img src="../assets/imgs/gif-cadastro-gaara.gif">`
-//                     } else if (json[0].idPersonagem == 6) {
-//                         img_fav.innerHTML = ` <img src="../assets/imgs/gif-cadastro-neji.gif">`
-//                     } else {
-//                         (json[0].idPersonagem == 7) 
-//                         img_fav.innerHTML = ` <img src="../assets/imgs/gif-cadastro-jiraya.gif">`
-//                     }
-//                 })
-//             }
-//         })
-//     }
 
 
     function cadastrar() {
@@ -111,16 +84,16 @@
         } else if (emailVar.indexOf("@") == -1) {
             alert("Seu Email não é possui @")
             return
-        }else if(nomeVar.length < 3){                        
-                alert("seu nome deve ter pelo menos 3 caracteres")
+        } else if (nomeVar.length < 3) {
+            alert("seu nome deve ter pelo menos 3 caracteres")
             return
         } else if (senhaVar.length < 8) {
             alert("sua senha deve ter ao menos 8 caracteres!")
-            return 
-        }else if(senhaVar != confirmacaoSenhaVar){
+            return
+        } else if (senhaVar != confirmacaoSenhaVar) {
             alert("confirmação de senha incorreta")
             return
-        }else {
+        } else {
             //setInterval(sumirMensagem, 5000)
 
         }
@@ -152,8 +125,8 @@
                 setTimeout(() => {
                     window.location = "./telalogin.html";
                 }, "2000")
-                
-                 //limparFormulario();
+
+                //limparFormulario();
                 // finalizarAguardar();
             } else {
                 alert("Houve um erro ao tentar realizar o cadastro!");
