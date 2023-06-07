@@ -29,9 +29,9 @@
         <h2>Login</h2>
         <div class="textoLogin">
           <div>Email:</div><br>
-          <input id="email_input" ><br>
+          <input maxlength="45" id="email_input" ><br>
           <div >Senha:</div><br>
-          <input type="password" id="senha_input"><br>
+          <input maxlength="8" type="password" id="senha_input"><br>
           <button onclick="entrar()">Entrar</button>
           <div id="div_msg"></div>
         </div>
@@ -95,7 +95,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
+                    // finalizarAguardar(texto);
                 });
             }
 

@@ -73,10 +73,13 @@ function cadastrar(req, res) {
     // Faça as validações dos valores
     if (nome == undefined) {
         alert("Seu nome está undefined!");
+        return
     } else if (email == undefined) {
         alert("Seu email está undefined!");
+        return
     } else if (senha == undefined) {
        alert("Sua senha está undefined!");
+       return
     }else{
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
